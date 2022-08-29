@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: #323546;
+  
+}
+
+.coin-text a{
+  text-decoration: none;
+}
+
+.coin-search {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  padding-top: 1%;
+  position: sticky;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: #323546;
+}
+
+.coin-search img {
+  width: 60px;
+}
+
+.coin-input2 {
+  background-color: #fff;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.coin-tags {
+  width: 90%;
+  padding: 2% 0;
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px solid #d7d7d7;
+  position: sticky;
+  z-index: 0;
+  top: 67px;
+  left: 0;
+  background-color: #323546;
+}
+
+.tag-rank {
+  margin-left: 1%;
+  width: 5%;;
+}
+
+.tag-coin {
+  width: 30%;
+}
+
+.tag-price {
+  width: 10%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.tag-volume {
+  padding-left: 5%;
+  width: 25%;
+}
+
+.tag-percent {
+  width: 10%;
+}
+
+.tag-mktcap {
+  width: 20%;
+  padding-right: 3%;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 860px) {
+
+  .coin-search img {
+    display: none;
+  }
+
+  .coin-tags {
+    top: 58px;
+  }
+
+  .tag-volume {
+    display: none;
+  }
+
+  .tag-price {
+    margin-left: 5%;
+  }
+
+  .tag-percent {
+    width: 20%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .coin-search h1 {
+    display: none;
+  }
+
+  .coin-search img {
+    display: inherit;
+  }
+
+  .coin-input2 {
+    padding: 7px;
+  }
+
+  .tag-coin {
+    width: 50%;
+  }
+
+  .tag-price {
+    width: 20%;
+    padding-right: 15%;
+  }
+
+  .tag-percent {
+    width: 20px;
+    padding-right: 15%;
+  }
+  
+  .tag-volume {
+    display: none;
+  }
+
+  .tag-mktcap {
+    display: none;
+  }
+}
+

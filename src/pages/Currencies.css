@@ -1,0 +1,72 @@
+.currencies {
+    background-color: #323546;;
+}
+
+.currencies button{
+    background-color: #4d5585;
+    margin: 1%;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    
+}
+.currencies button:hover {
+    background-color: rgb(99, 99, 99);
+    color: #fff;
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items .this{
+    background-color: #4d5585;
+    width: 50%;
+    padding: 2% 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+}
+
+.items h1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10%;
+}
+
+.items h4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 2%;
+    border-bottom: 1px solid grey;
+} 
+
+.items span{
+    margin-left: 10%;
+}
+
+.items img {
+    width: 40px;
+}
+
+@media screen and (max-width: 860px) {
+
+    .items .this{
+        width: 60%;
+        padding: 2% 3%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .items .this{
+        width: 80%;
+        padding: 2% 1%;
+    }
+}
