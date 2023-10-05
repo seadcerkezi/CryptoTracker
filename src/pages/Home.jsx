@@ -1,12 +1,10 @@
 import { useState } from "react";
 import "./Home.css";
 import Coin from "../Coin";
-import logo from '../logo.png'
+import logo from "../logo.png";
 
-
-const Home = ({coins}) => {
+const Home = ({ coins }) => {
   const [search, setSearch] = useState("");
-
 
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -19,8 +17,12 @@ const Home = ({coins}) => {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text"><a href="#">CoinTracker</a></h1>
-        <a href="#"><img src={logo}/></a>
+        <h1 className="coin-text">
+          <a href="#">CoinTracker</a>
+        </h1>
+        <a href="#">
+          <img src={logo} />
+        </a>
         <div className="coin-mode-search">
           <form className="coin-input">
             <input
@@ -33,7 +35,9 @@ const Home = ({coins}) => {
         </div>
       </div>
       <div className="coin-tags">
-        <p className="tag-rank">#</p>
+        <p className="tag-rank" style={{ fontWeight: "700" }}>
+          #
+        </p>
         <p className="tag-coin">Coin</p>
         <p className="tag-price">Price</p>
         <p className="tag-volume">24h Volume</p>
@@ -57,7 +61,7 @@ const Home = ({coins}) => {
         );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
